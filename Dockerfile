@@ -8,4 +8,4 @@ EXPOSE 3000
 
 WORKDIR /srv/website
 
-CMD [ "npx", "docusaurus", "start", "-h0.0.0.0" ]
+CMD [ "npm", "install", "&&", "npx", "docusaurus", "start", "-h0.0.0.0" ]
