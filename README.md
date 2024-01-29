@@ -17,10 +17,12 @@ A personal website/blog, powered by the content-first &amp; react-based web fram
 
 ### Running the Project
 
-1. Run locally with nvm
+1. Clone, and run `npm install` from the website directory.
+
+2. Run locally with nvm
 
 `cd website && npm run start`
 
-2. Run as container with docker-compose
+3. Run as container with docker-compose
 
 docker-compose build && docker-compose up -d && docker logs -f website
