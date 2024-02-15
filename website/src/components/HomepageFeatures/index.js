@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Software Engineer',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/software_engineer.svg').default,
     description: (
       <>
         I finished a Computer Science degree in 3 years at UC Santa Cruz and have 
@@ -17,7 +17,7 @@ const FeatureList = [
   },
   {
     title: 'Homelabber',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/homelabber.svg').default,
     description: (
       <>
         This website runs on Olomana, my v2 homelab setup. Check out r/homelab to 
@@ -29,7 +29,7 @@ const FeatureList = [
   },
   {
     title: 'Lifelong Learner',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/learner.svg').default,
     description: (
       <>
         As side hobbies, I love cooking new things, improving at volleyball and cycling, 
