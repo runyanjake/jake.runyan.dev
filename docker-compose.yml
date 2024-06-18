@@ -8,6 +8,7 @@ services:
   website:
     image: website:latest
     container_name: website
+    restart: unless-stopped
     build: .
     networks:
       - traefik_traefik-network
