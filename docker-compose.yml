@@ -1,16 +1,17 @@
 version: "3"
 
 networks:
-  traefik_traefik-network:
+  traefik:
     external: true
 
 services:
   website:
     image: website:latest
     container_name: website
+    restart: unless-stopped
     build: .
     networks:
-      - traefik_traefik-network
+      - traefik
     labels:
       - traefik.http.routers.website.rule=Host(`jake.runyan.dev`)
       - traefik.http.routers.website.tls=true
