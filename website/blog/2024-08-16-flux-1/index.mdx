@@ -1,0 +1,49 @@
+---
+slug: flux-1
+title: Image Generation with Flux.1
+authors: [jrunyan]
+tags: [ai, workflow]
+---
+
+# Upgrading my Image Generation Pipeline
+
+Stable diffusion and its peers have proven to be the beginning of the wide applications of image generation. Over the past year, AI-generated content has become a lot more prevalent on the internet, showing up everywhere from social media to content mill news sites.
+
+In my last iteration of the [PWS Recipes site](https://recipes.whitney.rip), I used the recent release of SDXL in a ComfyUI pipeline to generate static content for the site.
+
+Now, with the release of newer image generation model Flux, I go back for another stab at generating these images.
+
+## Pipeline
+
+Prompt generation is hard. Let's ironically use ChatGPT to generate a prompt for Flux.1.
+
+![img alt](./chat-gpt.png)
+
+The ComfyUI pipeline used is very simple. Just a single KSampler pass to generate the image.
+
+![img alt](./comfy.png)
+
+And, we're done.
+
+## Thoughts
+
+So, obviously some things have improved since the last time I looked into this space, and others have not.
+
+The most impressive leap forward has been in text generation, but that being said it's not always perfect:
+
+![img alt](./flux1.png)
+
+In the past we had to do with specially trained models that typically generated text with a lot of errors, usually smashing together characters.
+The current state of text generation is far better, the text that is specified in the prompt is treated specially and is correct more than it is incorrect.
+Despite this, background text (anything that not generated as a result of explicitly asking for it in the prompt) frequently has some of the original issues we faced. 
+
+![img alt](./tobeeandmaymay.png)
+
+Overall, the steps are positive, and the release of new tools means we have new limits to push the boundaries of. 
+
+## Resources
+
+[Flux.1](https://flux1.io/)
+
+[ComfyUI](https://github.com/comfyanonymous/ComfyUI)
+
