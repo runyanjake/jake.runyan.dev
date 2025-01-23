@@ -16,6 +16,12 @@ community has really been putting in the work so those like me looking to start 
 [OpenWebUI](https://github.com/ml-explore/OpenWebUI) is a great frontend UI for interacting with models. Some of their docker containers
 come bundled with Ollama, which means the setup is literally as simple as building a super standard docker container with it. 
 
+OpenWebUI also has the ability to allow for Web Search. In a departure from previous attempts, it seems to be possible to throw together
+a few free and/or open source components together to make a compelling attempt at web search.
+
+Because DeepSeek responds in a very specific and waffle-y way, it's not very well suited for being the model we use to generate our 
+search query. In its place, Llama3.2 is a suitable replacement as it's better with direct instructions like our ask to make the query.
+
 # Giving it a Shot
 
 ## DeepSeek
