@@ -128,6 +128,10 @@ const config = {
                 label: 'PWS Recipes',
                 href: 'https://recipes.whitney.rip',
               },
+              {
+                label: 'Jake\'s Photography Site',
+                href: 'https://jakesphotos.whitney.rip',
+              },
             ],
           },
         ],
