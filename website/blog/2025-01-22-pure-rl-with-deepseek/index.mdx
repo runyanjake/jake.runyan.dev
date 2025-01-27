@@ -35,6 +35,7 @@ For this experiment I was looking at the 1.5b and 8b models for `deepseek-r1`, t
 Man, it was pretty good. I've got a smaller GPU on PWS so I was limited to running the 8b model, but responses were good. I noticed
 the best response times on the 1.5b model, and for some easier tasks the correctness between the two was hard to discern.
 
+### Search
 I particularly liked the features of OpenWebUI to allow for web search, which from initial testing seemed to find good results to build
 context of the response with.
 
@@ -45,6 +46,11 @@ verbatim from my github profile and websites.
 
 ![img alt](./jake.png)
 
+For best results, the setup I have been using is Llama3.2 for generating search queries.  
+Search is done through the Google Programmable Search Engine (See [Here](https://docs.openwebui.com/tutorials/integrations/web_search/#google-pse-api) for instructions.)
+And the model of choice for the response is Deepseek-r1:8b.
+
+# Final Thoughts
 I'm still actively using chatgpt, claude, and others for coding work, but as local LLMs improve you can bet I'll be keeping up to date with this stack. 
 
 ## Resources
