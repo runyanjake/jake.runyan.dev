@@ -29,6 +29,7 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
+          path: './docs',
         },
         blog: {
           showReadingTime: true,
@@ -45,10 +46,20 @@ const config = {
       '@docusaurus/plugin-content-blog',
       {
         id: 'projects-blog',
-        routeBasePath: 'projects',
         path: './projects',
+        routeBasePath: 'projects',
         blogTitle: 'Projects',
         blogDescription: 'My Current & Past Projects'
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        id: 'resume',
+        path: './resume',
+        routeBasePath: 'resume',
+        blogTitle: 'Resume',
+        blogDescription: 'My Resume'
       },
     ],
   ],
@@ -73,6 +84,7 @@ const config = {
           },
           {to: '/projects', label: 'Projects', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/resume', label: 'Resume', position: 'left'},
           {
             href: 'https://github.com/runyanjake/jake.runyan.dev',
             label: 'GitHub',

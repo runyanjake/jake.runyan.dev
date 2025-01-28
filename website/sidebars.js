@@ -9,6 +9,14 @@ const sidebars = {
       id: 'about/about-me'
     },
   ],
+
+  resumeSidebar: [
+    {
+      type: 'doc',
+      label: 'Resume',
+      id: 'resume/resume'
+    }
+  ],
 };
 
 export default sidebars;
