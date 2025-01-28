@@ -25,4 +25,4 @@ A personal website/blog, powered by the content-first &amp; react-based web fram
 
 3. Run as container with docker-compose
 
-`docker-compose down && docker system prune && docker-compose build && docker-compose up -d && docker logs -f website`
+`docker-compose down && docker system prune -af && docker-compose build && docker-compose up -d && docker logs -f website`
